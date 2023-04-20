@@ -30,7 +30,7 @@ TauValue = 1
 EXTRAINFORMATION = 'Version3'
 PreInformation = 'Version3'
 find_best_validation = True
-COMMENT = 'DistributedAlgoVersion3' + '_1_Tau' + str(MAX)
+COMMENT = 'Experiment4_Best_' + str(TauValue)
 
 
 def load_dataset(*, file_name: str) -> pd.DataFrame:

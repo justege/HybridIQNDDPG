@@ -2,7 +2,6 @@
 This is a PyTorch implementation of the Hybrid IQN-DDPG algorithm
 
 ## Preprocessing
--------------
 - CSVs: This folder contains the raw data for the stocks. The data is from Yahoo Finance.
 - FirstProcessing.py: This file is used to preprocess the raw data and generate the training data.
 - SecondProcessing.py: This file is used to preprocess the training data and generate the training data for the DDPG model.
@@ -12,7 +11,6 @@ This is a PyTorch implementation of the Hybrid IQN-DDPG algorithm
 - Plotting_each_TA.py. Use this file if you would like to plot each Technical Indicator separately.
 
 Stock Trading Environment (Version 3)
--------------
 This folder contains the StockEnvTrainVersion3 class, which is a custom OpenAI gym environment for stock trading based on historical market data. This environment allows you to train reinforcement learning agents to optimize trading strategies using technical indicators.
 
 #Features
@@ -71,13 +69,16 @@ The observation space is a vector of 22 elements, including:
 additional feature: It tracks and visualizes agent's performance, including account value, daily returns, and Sharpe ratio
 
 ## Training
--------------
-- run.py: run the code with the following command: python run.py
+- run.py: run the code with the following command: python run.py, specify informations about training the agent by running: python run.py --help
 after running the code, you will get the following results:
 - The agent's model saved, the performance, including account value, daily returns, and Sharpe ratio as csv and png.
+- Change the Tau value in the run.py and networks.py file to get the results for different Tau values.
+- 
+##Testing
+- run test_run.py with the same command: python test_run.py without. Specify the model path, Tau value you are interested of and the test timeframe in test_py.py
+
 
 ##Analysis
--------------
 Analyze the results with 
 - AnalyzeAverageWeights.py: This file is used to analyze the average weights of the agent's model.
 - AnalyzePortfolioValueInOnePlot.py : This file is used to analyze the portfolio value of different DistRL agents models.

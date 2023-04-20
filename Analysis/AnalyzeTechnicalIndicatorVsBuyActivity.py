@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 files = [
-    'runs/test/PriceAndWeightDistribution_best_0.375.csv',
+'runs/test/PriceAndWeightDistribution_best_0.375.csv',
 'runs/test/PriceAndWeightDistribution_best_0.5.csv',
 'runs/test/PriceAndWeightDistribution_best_0.75.csv',
 'runs/test/PriceAndWeightDistribution_best_1.csv']
