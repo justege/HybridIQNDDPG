@@ -1,7 +1,7 @@
 ### HybridIQNDDPG
 This is a PyTorch implementation of the Hybrid IQN-DDPG algorithm
 
-## Preprocessing
+# Preprocessing
 - CSVs: This folder contains the raw data for the stocks. The data is from Yahoo Finance.
 - FirstProcessing.py: This file is used to preprocess the raw data and generate the training data.
 - SecondProcessing.py: This file is used to preprocess the training data and generate the training data for the DDPG model.
@@ -13,7 +13,7 @@ This is a PyTorch implementation of the Hybrid IQN-DDPG algorithm
 Stock Trading Environment (Version 3)
 This folder contains the StockEnvTrainVersion3 class, which is a custom OpenAI gym environment for stock trading based on historical market data. This environment allows you to train reinforcement learning agents to optimize trading strategies using technical indicators.
 
-#Features
+# Features
 - Supports training with multiple stocks in the portfolio
 - Handles transaction fees
 - Utilizes common technical indicators like MACD, RSI, CCI, and ADX
@@ -26,7 +26,7 @@ To use this environment, you will need the following Python libraries:
 - gym
 - matplotlib
 
-#Usage
+# Usage
 1. Import the StockEnvTrainVersion3 class from the provided Python file.
 2. Initialize the environment with a pandas dataframe containing the historical market data and the starting day of the simulation.
 3. Use the environment's step and reset methods in your reinforcement learning training loop.
@@ -51,7 +51,7 @@ while not done:
     state = next_state
 ```
 
-#Observation Space, Reward function, and action space
+# Observation Space, Reward function, and action space
 The observation space is a vector of 22 elements, including:
 
 - Current account balance
@@ -73,11 +73,11 @@ after running the code, you will get the following results:
 - The agent's model saved, the performance, including account value, daily returns, and Sharpe ratio as csv and png.
 - Change the Tau value in the run.py and networks.py file to get the results for different Tau values.
 
-#Testing
+# Testing
 - run test_run.py with the same command: python test_run.py without. Specify the model path, Tau value you are interested of and the test timeframe in test_py.py
 
 
-#Analysis
+# Analysis
 Analyze the results with 
 - AnalyzeAverageWeights.py: This file is used to analyze the average weights of the agent's model.
 - AnalyzePortfolioValueInOnePlot.py : This file is used to analyze the portfolio value of different DistRL agents models.
