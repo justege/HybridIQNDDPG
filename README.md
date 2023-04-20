@@ -51,7 +51,6 @@ while not done:
     state = next_state
 ```
 
-##Environment Details
 #Observation Space, Reward function, and action space
 The observation space is a vector of 22 elements, including:
 
@@ -68,17 +67,17 @@ The observation space is a vector of 22 elements, including:
 
 additional feature: It tracks and visualizes agent's performance, including account value, daily returns, and Sharpe ratio
 
-## Training
+# Training
 - run.py: run the code with the following command: python run.py, specify informations about training the agent by running: python run.py --help
 after running the code, you will get the following results:
 - The agent's model saved, the performance, including account value, daily returns, and Sharpe ratio as csv and png.
 - Change the Tau value in the run.py and networks.py file to get the results for different Tau values.
-- 
-##Testing
+
+#Testing
 - run test_run.py with the same command: python test_run.py without. Specify the model path, Tau value you are interested of and the test timeframe in test_py.py
 
 
-##Analysis
+#Analysis
 Analyze the results with 
 - AnalyzeAverageWeights.py: This file is used to analyze the average weights of the agent's model.
 - AnalyzePortfolioValueInOnePlot.py : This file is used to analyze the portfolio value of different DistRL agents models.
